@@ -1,0 +1,384 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>ETH VEGA</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="theme-color" content="#000000">  
+    <title>VEGA</title>
+
+    <link rel="shortcut icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue_grey-pink.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">      
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="/zairal.css"> -->
+    <!--@@@@@@@@@@@@@@@@@@@@classes@@@@@@@@@@@@@@@@@@@@-->
+    <style>
+        body, h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
+        }
+        p, a {
+            font-size: 18px;
+        }
+        h5 {
+            font-size: 22px;
+        }
+        ::-webkit-scrollbar { 
+            display: none; 
+        }        
+        .hov:hover {
+            opacity: 0.60
+        }
+        .culor {
+            -webkit-animation: culor 1s;
+            animation: culor 1s;
+        }
+        @keyframes culor {
+            0% {
+                background-color: rgba(0,0,0,0)
+            }
+            100% {
+                background-color: #29434e
+            }
+        }
+        .culor2 {
+            -webkit-animation: culor2 1s;
+            animation: culor2 1s;
+        }
+        @keyframes culor2 {
+            0% {
+                background-color: #29434e
+            }
+            100% {
+                background-color: rgba(0,0,0,0)
+            }
+        }
+        #scr {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 30px;
+            height: 50px;
+            margin-left: -15px;
+            border: 2px solid #fff;
+            border-radius: 50px;
+            box-sizing: border-box;
+        }
+        #scr::before {
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            content: '';
+            width: 6px;
+            height: 6px;
+            margin-left: -3px;
+            background-color: #fff;
+            border-radius: 100%;
+            -webkit-animation: scroll 2s infinite;
+            animation: scroll 2s infinite;
+            box-sizing: border-box;
+        }
+        @-webkit-keyframes scroll {
+            0% {
+                -webkit-transform: translate(0, 0);
+                opacity: 0;
+            }
+            40% {
+                opacity: 1;
+            }
+            80% {
+                -webkit-transform: translate(0, 20px);
+                opacity: 0;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+        @keyframes scroll {
+            0% {
+                transform: translate(0, 0);
+                opacity: 0;
+            }
+            40% {
+                opacity: 1;
+            }
+            80% {
+                transform: translate(0, 20px);
+                opacity: 0;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+        /* #particles-js {
+            background: cornflowerblue;
+        } */
+    </style>
+</head>
+
+<body style="background-color:#29434e;">  
+    <!--@@@@@@@@@@@@@@@@@@@@loading@@@@@@@@@@@@@@@@@@@@-->
+    <div style="height:100%;background-color:black;position: fixed;z-index: 3;" id="bl"></div>
+
+    <!--@@@@@@@@@@@@@@@@@@@@navbar@@@@@@@@@@@@@@@@@@@@
+    <div id="nav" class="navbar">                    
+        <h3 id="textlogo" class="txtlogo"><b>Ethereum VEGA</b></h3>
+    </div>-->
+    <header id="nav" class="mdl-layout__header mdl-layout__header--transparent" style="position: fixed;width: 100%;z-index: 2;top: 0;">
+        <div class="mdl-layout-icon" style="text-align:right;"><img src="images/logo.png" height="100%" /></div>
+        <div class="mdl-layout__header-row">
+            <a class="mdl-navigation__link" href="#home" id="lname"><span onclick="document.getElementById('lname').click();" class="mdl-layout-title">ethereum VEGA</span></a>
+            <div class="mdl-layout-spacer"></div>
+            <nav class="mdl-navigation mdl-cell--hide-phone">
+              <a class="mdl-navigation__link" href="#t1">about</a>
+              <a class="mdl-navigation__link" href="#t2">release</a>
+              <a class="mdl-navigation__link" href="#t3">Link</a>
+              <a class="mdl-navigation__link" href="#contact">contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="mdl-layout__content" style="width:100%;display: none;" id="main">
+        <!--@@@@@@@@@@@@@@@@@@@@logo@@@@@@@@@@@@@@@@@@@@-->
+        <div id="home" style="position:fixed;width:100%;overflow:hidden;z-index:0;">
+            <img src="images/bg.jpg" id="vid" style="position:absolute;left:50%" />
+            <span id="scr"></span>
+        </div>
+
+        <!--@@@@@@@@@@@@@@@@@@@@contents@@@@@@@@@@@@@@@@@@@@-->
+        <div id="blank" style="background-color:black;"></div>
+        <div id="texts" style="color:white;background-color:black;position:relative;z-index:1;opacity:1;overflow:hidden;padding-top: 64px;">            
+            
+            <!--@@@@@@@@@@@@@@@@@@@@T1@@@@@@@@@@@@@@@@@@@@-->
+            <div id="t1" class="mdl-grid bin" style="padding: 3em;padding-top: 10em;padding-bottom: 5em;background-image: url('images/t1.jpg');;background-size: auto 100%;background-position: center;">
+                <div class="mdl-cell mdl-cell--5-col mdl-cell--8-col-tablet mdl-cell--4-col-phone" style="text-align: center">
+                    <h2>Monetary Platform.</h2><h2><b>Innovated.</b></h2>
+                    <h4 style="color:#8eacbb">with a cutting-edge technology</h4>
+                    <hr class="mdl-cell--hide-desktop" />
+                </div>
+                <div class="mdl-cell mdl-cell--7-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">                    
+                    <div>
+                        <h5><b style="color:#8eacbb">Ethereum Vega is a hard fork of Ethereum,</b> with a original block rewards served with replay-attack protection.</h5>
+                        <p class="mdl-cell--hide-phone">It has hardforked at the block number 4370000 so all ethereum holders before block 4369999 will hold EVA with the same amount.</p>
+                    </div>
+                    <br />
+                    <div>
+                        <h5>Ethereum Vega is a <b style="color:#8eacbb">decentralized monetary platform based on cutting-edge blockchain technology</b>.</h5>
+                        <p class="mdl-cell--hide-phone">It provides an ecosystem for building non-stop applications that run decentralized services without any possibility of downtime, censorship, fraud or third party interference that comes from centralized governance.</p>
+                    </div>
+                    <br />
+                </div>
+            </div>
+
+            <!--@@@@@@@@@@@@@@@@@@@@T2@@@@@@@@@@@@@@@@@@@@-->
+            <div style="background: linear-gradient(#000000 ,#1f013f);height: 100px;"></div>
+            <div id="t2" style="padding:3em;padding-top: 5em;background-image: url('images/t2.jpg');background-size: auto 100%;background-position: center;">
+                <h2 style="text-align: center;">Release Note (1.9.0) 
+                    <span class="mdl-button mdl-js-button mdl-button--icon" onclick="location.assign('https://github.com/EthereumVega/weth')">
+                        <i class="material-icons">launch</i>
+                    </span>
+                </h2>
+                <br />
+                <h5 style="text-align:center;color:#fdd835;">Warning : Do not use older version! It will cause database error! (It is a malware in other words)</h5>
+                <br />
+                <h5>1. Changed Chain_ID</h5>
+                <p>This version will enable changing default chain_id for main-net and test-net. Therefore, if you use higher version than 1.9.0 you will be safe from replay-attacks. (This also ensure that EVA is different from ETH.)</p>
+                <br />
+                <h5>2. Fixed some critical bugs</h5>
+                <p>Signs available at <a style="color:#fdd835;" href="https://github.com/wjcloud/pubkey/tree/master/signs/weth">here.</a></p>
+            </div>
+
+            <!--@@@@@@@@@@@@@@@@@@@@T3@@@@@@@@@@@@@@@@@@@@-->
+            <div style="background: linear-gradient(#f2a75e ,#f0f0f0);height: 100px;"></div>
+            <div id="t3" style="padding:3em;padding-top: 5em;background-image: url('images/t3.jpg');background-size: auto 100%;background-position: center;color:black;">
+                <h2 style="text-align: center;">Release Note (1.9.0) 
+                    <span class="mdl-button mdl-js-button mdl-button--icon" onclick="location.assign('https://github.com/EthereumVega/weth')">
+                        <i class="material-icons">launch</i>
+                    </span>
+                </h2>
+                <br />
+                <h5 style="text-align:center;color:#fdd835;">Warning : Do not use older version! It will cause database error! (It is a malware in other words)</h5>
+                <br />
+                <h5>1. Changed Chain_ID</h5>
+                <p>This version will enable changing default chain_id for main-net and test-net. Therefore, if you use higher version than 1.9.0 you will be safe from replay-attacks. (This also ensure that EVA is different from ETH.)</p>
+                <br />
+                <h5>2. Fixed some critical bugs</h5>
+                <p>Signs available at <a style="color:#fdd835;" href="https://github.com/wjcloud/pubkey/tree/master/signs/weth">here.</a></p>
+            </div>
+
+            <!--@@@@@@@@@@@@@@@@@@@@T4@@@@@@@@@@@@@@@@@@@@-->
+
+            <!--@@@@@@@@@@@@@@@@@@@@Contact@@@@@@@@@@@@@@@@@@@@-->
+            <div style="background: linear-gradient(#000000 ,#29434e);height:300px;"></div>
+            <div id="contact" style="background-color:#29434e;padding: 3em;position: inherit;z-index: 3;">
+                <br />
+                <div class="mdl-grid">
+                    <div class="mdl-cell mdl-cell--6-col">
+                        <div>
+                            <h3>Community</h3>
+                            <a href="https://twitter.com/ethereumvega"class="hov" style="color:white;"><i class="fa fa-twitter" style="font-size: 25px;margin-right: 5px;color: white;"></i></a>
+                            <a href="https://www.reddit.com/r/ethereumvega/"class="hov" style="color:white;"><i class="fa  fa-reddit-alien" style="font-size: 25px;margin-right: 5px;color: white;"></i></a>
+                            <a href="https://www.github.com/ethereumvega" class="hov" style="color:white;"><i class="fa fa-git" style="font-size: 25px;margin-right: 5px;color: white;"></i></a>
+                        </div>
+                        <br />
+                        <div>
+                            <h3>Contact</h3>
+                            <div>
+                                <button id="show-dialog" style="width:100%" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--colored mdl-button--raised">Send Feedback</button>
+                                <dialog class="mdl-dialog" id="dialog">
+                                    <h4 class="mdl-dialog__title">Feedback :)</h4>
+                                    <div class="mdl-dialog__content">
+                                        <form action="/feedback" method="post" id="comm">
+                                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" id="mailin">
+                                                <input class="mdl-textfield__input" required type="text" name="mail" id="mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"></input>
+                                                <label class="mdl-textfield__label" for="mail">E-mail</label>
+                                            </div>
+                                            <br />
+                                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                                <textarea class="mdl-textfield__input" required type="text" name="msg" id="msg" rows= "3"></textarea>
+                                                <label class="mdl-textfield__label" for="msg">Message</label>
+                                            </div>
+                                            <br/>
+                                            <button id="subm" style="display:none;" type="submit"></button>
+                                        </form>
+                                    </div>
+                                    <div class="mdl-dialog__actions">
+                                        <button type="submit" class="mdl-button send">Send</button>
+                                        <button type="button" class="mdl-button close">Cancle</button>
+                                    </div>
+                                </dialog>
+                                <script>                                
+                                    var dialog = document.getElementById('dialog');
+                                    var showDialogButton = document.querySelector('#show-dialog');
+                                    if (! dialog.showModal) {
+                                        dialogPolyfill.registerDialog(dialog);
+                                    }
+                                    showDialogButton.addEventListener('click', function() {
+                                        dialog.showModal();
+                                    });
+                                    dialog.querySelector('.send').addEventListener('click', function() {
+                                        document.getElementById('subm').click();
+                                    });
+                                    dialog.querySelector('.close').addEventListener('click', function() {
+                                        dialog.close();
+                                    });
+                                </script>
+                            </div>
+                            <br />
+                            <div>
+                                <button id="show-dialog2" style="width:100%" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--colored mdl-button--raised">Donate to support</button>
+                                <dialog class="mdl-dialog" id="dialog2">
+                                    <h4 class="mdl-dialog__title">Support us!</h4>
+                                    <div class="mdl-dialog__content">
+                                        <p>abcdefghijklmnop</p>
+                                    </div>
+                                    <div class="mdl-dialog__actions">
+                                        <button type="button" class="mdl-button close2">close</button>
+                                    </div>
+                                </dialog>
+                                <script>
+                                    var dialog2 = document.getElementById('dialog2');
+                                    var showDialogButton2 = document.querySelector('#show-dialog2');
+                                    if (! dialog2.showModal) {
+                                        dialogPolyfill.registerDialog(dialog2);
+                                    }
+                                    showDialogButton2.addEventListener('click', function() {
+                                        dialog2.showModal();
+                                    });
+                                    dialog2.querySelector('.close2').addEventListener('click', function() {
+                                        dialog2.close();
+                                    });
+                                </script>
+                            </div>
+                            <div>
+                                <br />
+                                <p>Please be careful scam sites. We do not sell EVA or require your private keys. Your security is your responsibility.</p>
+                            </div>
+                        </div>                    
+                    </div>
+                    <div class="mdl-cell mdl-cell--6-col">
+                        <h3>Tweets</h3>
+                        <a class="twitter-timeline" data-chrome="noheader nofooter noborders transparent noscrollbar" data-height="350" data-theme="dark" data-link-color="#8eacbb" href="https://twitter.com/opcahf"></a>
+                        <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    </div>
+                </div>
+            </div>
+
+            <!--@@@@@@@@@@@@@@@@@@@@footer@@@@@@@@@@@@@@@@@@@@-->
+            <footer class="mdl-mega-footer" style="background-color:#29434e;">
+                <div class="mdl-mega-footer__middle-section">        
+                    <div class="mdl-mega-footer__bottom-section">
+                        <div class="mdl-logo">Ethereum VEGA, Seoul</div>
+                    </div>
+                </div>            
+            </footer>
+        </div>    
+    </main>    
+
+    <!--@@@@@@@@@@@@@@@@@@@@toast@@@@@@@@@@@@@@@@@@@@-->
+    <div id="msgsent" class="mdl-js-snackbar mdl-snackbar">
+        <div class="mdl-snackbar__text"></div>
+        <button class="mdl-snackbar__action" type="button"></button>
+    </div>
+    <script>
+        function toast(){
+            var snackbarContainer = document.querySelector('#msgsent');
+            var data = {message: 'Message sent succesfully'};
+            snackbarContainer.MaterialSnackbar.showSnackbar(data);
+        }
+    </script>
+
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        window.onload = function(){                
+            var h = window.screen.height;
+            var w = h * 1920 / 1080;
+            var vid = document.getElementById("vid");
+            var home = document.getElementById("home");
+            var blank = document.getElementById("blank");
+            var scr = document.getElementById("scr");
+            var nav = document.getElementById("nav");
+            vid.style.height = h + "px";
+            home.style.height = h + "px";
+            vid.style.marginLeft = "-" + w / 2 + "px";
+            blank.style.height = h + "px";
+            scr.style.top = h * 0.8 + "px";
+            document.getElementById("bl").style.display = "none";
+            document.getElementById("main").style.display = "inherit";
+            window.onscroll = function () {
+                if(document.documentElement.scrollTop < h/1.5){
+                    home.style.display = "inherit";
+                    var sh = document.documentElement.scrollTop / h;
+                    document.getElementById("texts").style.opacity = 1.5 * document.documentElement.scrollTop / h;      
+                    blank.style.opacity = 1.5 * document.documentElement.scrollTop / h;               
+                    scr.style.opacity = 1 - 1.5 * (document.documentElement.scrollTop / h);
+                }else{
+                    home.style.display = "none";
+                }
+                if (document.body.scrollTop > h * 0.8 || document.documentElement.scrollTop > h * 0.8) {
+                    nav.classList.add("culor");
+                    nav.style.backgroundColor = "#29434e"
+                    nav.classList.remove("culor2");
+                } else {
+                    nav.classList.add("culor2");
+                    nav.style.backgroundColor = "rgba(0,0,0,0)";
+                    nav.classList.remove("culor");
+                }
+            }
+            $("a").on('click', function(event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function(){ });
+                }
+            });
+        }    
+    </script>
+</body>
+</html>
