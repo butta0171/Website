@@ -14,8 +14,6 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">      
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- <link rel="stylesheet" href="/zairal.css"> -->
-    <!--@@@@@@@@@@@@@@@@@@@@classes@@@@@@@@@@@@@@@@@@@@-->
     <style>
         body, h1, h2, h3, h4, h5, h6 {
             font-family: 'Montserrat', sans-serif;
@@ -113,31 +111,37 @@
                 opacity: 0;
             }
         }
-        /* #particles-js {
-            background: cornflowerblue;
-        } */
+        @media screen and (max-width: 1024px){
+            .mdl-layout__header {
+                display: inherit;
+            }
+        }
     </style>
 </head>
 
 <body style="background-color:#29434e;">  
     <!--@@@@@@@@@@@@@@@@@@@@loading@@@@@@@@@@@@@@@@@@@@-->
-    <div style="height:100%;background-color:black;position: fixed;z-index: 3;" id="bl"></div>
+    <div style="height:100%;background-color:#29434e;position: fixed;z-index: 3;" id="bl"></div>
 
-    <!--@@@@@@@@@@@@@@@@@@@@navbar@@@@@@@@@@@@@@@@@@@@
-    <div id="nav" class="navbar">                    
-        <h3 id="textlogo" class="txtlogo"><b>Ethereum VEGA</b></h3>
-    </div>-->
-    <header id="nav" class="mdl-layout__header mdl-layout__header--transparent" style="position: fixed;width: 100%;z-index: 2;top: 0;">
+    <header id="nav" class="mdl-layout__header mdl-layout__header--transparent culor2" style="position: fixed;width: 100%;z-index: 2;top: 0;">
         <div class="mdl-layout-icon" style="text-align:right;"><img src="images/logo.png" height="100%" /></div>
         <div class="mdl-layout__header-row">
             <a class="mdl-navigation__link" href="#home" id="lname"><span onclick="document.getElementById('lname').click();" class="mdl-layout-title">ethereum VEGA</span></a>
             <div class="mdl-layout-spacer"></div>
             <nav class="mdl-navigation mdl-cell--hide-phone">
+<<<<<<< HEAD
+              <a class="mdl-navigation__link" href="#t1">about</a>
+              <a class="mdl-navigation__link" href="#t2">feat.</a>
+              <a class="mdl-navigation__link" href="#t3">apps</a>
+              <a class="mdl-navigation__link" href="#t4">FAQs</a>
+              <a class="mdl-navigation__link mdl-cell--hide-tablet" href="#contact">contact</a>
+=======
                 <a class="mdl-navigation__link" href="#t1">About</a>
                 <a class="mdl-navigation__link" href="#t2">New Features</a>
                 <a class="mdl-navigation__link" href="#t3">Services</a>
                 <a class="mdl-navigation__link" href="#t4">FAQ</a>
                 <a class="mdl-navigation__link" href="#contact">Contact</a>
+>>>>>>> 26d06b81d7050b35c0f724fbf34b992e4d4aa038
             </nav>
         </div>
     </header>
@@ -196,7 +200,7 @@
             <div id="t3" style="padding:3em;padding-top: 5em;background: url('images/t3.jpg');background-size: auto 100%;background-position: center;color: black">
                 <h2 style="text-align: center;">Nodes</h2>
                 <div class="mdl-grid">
-                    <div class="mdl-cell mdl-cell--2-col mdl-cell--2-col-tablet mdl-cell--2-col-phone">
+                    <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--2-col-phone">
                         <div class="mdl-card mdl-shadow--2dp" style="background: url('images/n_weth.png') center / cover;background-color: #546e7a;color: white;width:100%;" onclick="location.assign('https://github.com/EthereumVega/weth/releases')">
                             <div class="mdl-card__title mdl-card--expand"></div>
                             <div class="mdl-card__actions" style="height: 52px;padding: 16px;background: rgba(0, 0, 0, 0.2);">
@@ -204,7 +208,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="mdl-cell mdl-cell--2-col mdl-cell--2-col-tablet mdl-cell--2-col-phone" style="text-align:center;">
+                    <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--2-col-phone" style="text-align:center;">
                         <div style="margin-top:30%">
                             <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-button--mini-fab">
                                 <i class="material-icons">add</i>
@@ -217,7 +221,7 @@
                 <br />
                 <h2 style="text-align: center;">Wallets</h2>
                 <div class="mdl-grid">
-                    <div class="mdl-cell mdl-cell--2-col mdl-cell--2-col-tablet mdl-cell--2-col-phone">
+                    <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--2-col-phone">
                         <div class="mdl-card mdl-shadow--2dp" style="background: url('images/w_mist.png') center / cover;background-color: #29434e;color: white;width:100%;" onclick="location.assign('https://github.com/EthereumVega/mist/releases')">
                             <div class="mdl-card__title mdl-card--expand"></div>
                             <div class="mdl-card__actions" style="height: 52px;padding: 16px;background: rgba(0, 0, 0, 0.4);">
@@ -225,7 +229,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="mdl-cell mdl-cell--2-col mdl-cell--2-col-tablet mdl-cell--2-col-phone" style="text-align:center;">
+                    <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--2-col-phone" style="text-align:center;">
                         <div style="margin-top:30%">
                             <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-button--mini-fab" onclick="location.assign('https://github.com/EthereumVega/Website')">
                                 <i class="material-icons">add</i>
@@ -238,7 +242,11 @@
                 <br />
                 <h2 style="text-align: center;">Mining Pools</h2>
                 <div class="mdl-grid">
+<<<<<<< HEAD
+                    <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--2-col-phone" style="text-align:center;">
+=======
                     <div class="mdl-cell mdl-cell--2-col mdl-cell--2-col-tablet mdl-cell--2-col-phone" style="text-align:center;">
+>>>>>>> 26d06b81d7050b35c0f724fbf34b992e4d4aa038
                         <div style="margin-top:30%">
                             <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-button--mini-fab">
                                 <i class="material-icons">add</i>
@@ -251,7 +259,7 @@
                 <br />
                 <h2 style="text-align: center;">Services</h2>
                 <div class="mdl-grid">
-                    <div class="mdl-cell mdl-cell--2-col mdl-cell--2-col-tablet mdl-cell--2-col-phone" style="text-align:center;">
+                    <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--2-col-phone" style="text-align:center;">
                         <div style="margin-top:30%">
                             <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-button--mini-fab">
                                 <i class="material-icons">add</i>
@@ -264,7 +272,7 @@
                 <br />
                 <h2 style="text-align: center;">Exchanges</h2>
                 <div class="mdl-grid">
-                    <div class="mdl-cell mdl-cell--2-col mdl-cell--2-col-tablet mdl-cell--2-col-phone" style="text-align:center;">
+                    <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--2-col-phone" style="text-align:center;">
                         <div style="margin-top:30%">
                             <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-button--mini-fab">
                                 <i class="material-icons">add</i>
@@ -312,10 +320,10 @@
             <div id="contact" style="background-color:#29434e;padding: 3em;position: inherit;z-index: 3;">
                 <br />
                 <div class="mdl-grid">
-                    <div class="mdl-cell mdl-cell--6-col" style="padding: 2em;">
+                    <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet mdl-cell--4-col-phone" style="padding: 2em;">
                         <div>
                             <h3>Community</h3>
-                            <a href="https://twitter.com/ethereumvega"class="hov" style="color:white;"><i class="fa fa-twitter" style="font-size: 25px;margin-right: 5px;color: white;"></i></a>
+                            <a href="https://twitter.com/opcahf"class="hov" style="color:white;"><i class="fa fa-twitter" style="font-size: 25px;margin-right: 5px;color: white;"></i></a>
                             <a href="https://www.reddit.com/r/ethereumvega/"class="hov" style="color:white;"><i class="fa  fa-reddit-alien" style="font-size: 25px;margin-right: 5px;color: white;"></i></a>
                             <a href="https://www.github.com/ethereumvega" class="hov" style="color:white;"><i class="fa fa-git" style="font-size: 25px;margin-right: 5px;color: white;"></i></a>
                         </div>
@@ -369,7 +377,7 @@
                                 <dialog class="mdl-dialog" id="dialog2">
                                     <h4 class="mdl-dialog__title">Support us!</h4>
                                     <div class="mdl-dialog__content">
-                                        <p>abcdefghijklmnop</p>
+                                        <p>try later.. :)</p>
                                     </div>
                                     <div class="mdl-dialog__actions">
                                         <button type="button" class="mdl-button close2">close</button>
@@ -395,8 +403,8 @@
                             </div>
                         </div>                    
                     </div>
-                    <div class="mdl-cell mdl-cell--6-col" style="padding: 2em;">
-                        <h3>Tweets</h3>
+                    <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet mdl-cell--4-col-phone" style="padding: 2em;">
+                        <h3 onclick="location.assign('https://twitter.com/opcahf')">Tweets</h3>
                         <a class="twitter-timeline" data-chrome="noheader nofooter noborders transparent noscrollbar" data-height="350" data-theme="dark" data-link-color="#8eacbb" href="https://twitter.com/opcahf"></a>
                         <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
                     </div>
@@ -443,8 +451,8 @@
             vid.style.marginLeft = "-" + w / 2 + "px";
             blank.style.height = h + "px";
             scr.style.top = h * 0.8 + "px";
-            document.getElementById("bl").style.display = "none";
             document.getElementById("main").style.display = "inherit";
+            document.getElementById("bl").style.display = "none";
             window.onscroll = function () {
                 if(document.documentElement.scrollTop < h/1.5){
                     home.style.display = "inherit";
